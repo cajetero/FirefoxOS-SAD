@@ -1,4 +1,4 @@
-ul {
+dul {
 	background-color:#2ecc71;
 	color:orange;
 	text-align:center;
@@ -23,7 +23,7 @@ body a {
     padding: 19px 25px 20px;
 }
 
-input.todo-search-field {
+input {
     border: medium none;
     color: rgb(52, 73, 94);
     font-size: 19px;
@@ -36,7 +36,7 @@ input.todo-search-field {
     background: none repeat scroll 0% 0% transparent;
 }
 
-.todo li {
+ul {
     background: url("../images/todo/todo.png") no-repeat scroll 92% center / 20px 20px rgb(52, 73, 94);
     margin-top: 2px;
     padding: 18px 42px 17px 25px;
