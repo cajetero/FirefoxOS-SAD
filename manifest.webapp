@@ -1,0 +1,39 @@
+
+
+    {
+        "version": "1.0",
+        "name": "My Todo List",
+        "description": "Simple Todo List",
+        "launch_path": "/index.html",
+        "icons": {
+            "16": "/img/icons/appicon-16.png",
+            "48": "/img/icons/appicon-48.png",
+            "128": "/img/icons/appicon-128.png"
+        },
+        "developer": {
+            "name": "Oscar Cortez",
+            "url": "http://vios-up.blogspot.com"
+        },
+        "installs_allowed_from": ["*"],
+        "locales": {
+            "es": {
+                "description": "FirefoxOS Simple TodoList",
+                "developer": {
+                    "url": "http://vios-up.blogspot.com"
+                }
+            },
+            "it": {
+                "description": "Il vostro nuovo fantastico Open Web App",
+                "developer": {
+                    "url": "http://vios-up.blogspot.com"
+                }
+            }
+        },
+        "default_locale": "en",
+        "permissions": {
+            
+        },
+	"fullscreen": "true"
+    }
+
+
