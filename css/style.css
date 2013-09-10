@@ -1,0 +1,46 @@
+body {
+        background-color: #16a085;
+        height: 520px;
+		width: 220px;
+		border: 1px solid white;
+        font: 14px Arial;
+      }
+h1 {
+	color: white;
+}
+
+.list {
+    background: #8e44ad;
+    margin-top: 2px;
+    padding: 18px 42px 17px 25px;
+    position: relative;
+    transition: all 0.25s ease 0s;
+    cursor: pointer;
+    color: white;
+     
+}
+
+.boton {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    background: none repeat scroll 0% 0% / 16px 16px #2980b9;
+    border-radius: 6px 6px 0px 0px;
+    color: rgb(52, 73, 94);
+    padding: 19px 25px 20px;
+       
+}
+
+.box {
+    border: 1px solid white;
+    color: rgb(52, 73, 94);
+    font-size: 19px;
+    box-shadow: none;
+    margin: 10px;
+    line-height: 23px;
+    padding: 5px 0px;
+    text-indent: 0px;
+    font-weight: 700;
+    background: #27ae60 repeat scroll 0% 0% transparent;
+}
+
