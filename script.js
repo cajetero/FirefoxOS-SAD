@@ -64,7 +64,7 @@
       }
       
       function renderTodo(row) {
-        return "<li>" + row.todo  + " [<a href='javascript:void(0);'  onclick='html5rocks.webdb.deleteTodo(" + row.ID +");'>Delete</a>]</li>";
+        return "<li>" + row.todo  + " [<a href='javascript:void(0);'  onclick='html5rocks.webdb.deleteTodo(" + row.ID +");'>Borrar</a>]</li>";
       }
       
       function init() {
