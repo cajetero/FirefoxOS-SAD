@@ -1,12 +1,16 @@
 body {
         background-color: #16a085;
-        height: 520px;
-		width: 220px;
-		border: 1px solid white;
+        border: 1px solid white;
         font: 14px Arial;
       }
-h1 {
-	color: white;
+.Pie {
+    background-color: #2aa3c8;
+	height:60px;
+    color:white;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 0;
+    text-align: center;
 }
 
 .list {

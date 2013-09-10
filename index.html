@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
    <title>TodoList</title>
-   <link href="style.css" rel="stylesheet" >
-   <script src="script.js"></script>   
+   <link rel="stylesheet" href="css/style.css">   
+   <link rel="stylesheet" href="css/foundation.css">  
+
+  <script src="js/vendor/custom.modernizr.js"></script> 
+  <script src="js/script.js"></script>  
   </head>
   <body onload="init();">
     <ul class="list" id="todoItems">
     </ul>
     <form type="post" onsubmit="addTodo(); return false;">
-      <input class="box" type="text" id="todo" name="todo" placeholder="Cosas Por Hacer" style="width: 200px;" />
-      <input class="boton" type="submit" value="Agregar"  />
+        <input class="panel expand" type="text" id="todo" name="todo" placeholder="Cosas Por Hacer" style="width: 200px;" />
+        <input class="small-3 large-3 button small expand" type="submit" value="Agregar"/>
     </form>
-    <h1 align="center">My To-do List</h1>
+    
+    <h4 class="Pie" align="center">My To-do List</h4>
   </body>
   <footer>
     

@@ -1,6 +1,5 @@
 
-
-    {
+{
         "version": "1.0",
         "name": "My Todo List",
         "description": "Simple Todo List",
@@ -14,6 +13,19 @@
             "name": "Oscar Cortez",
             "url": "http://vios-up.blogspot.com"
         },
+        "permissions": {
+            "storage": {
+                "description": "Requerido para almacenar los items del todo list",
+                app: ALLOW_ACTION,
+                privileged: ALLOW_ACTION,
+                certified: ALLOW_ACTION,
+                substitute: [
+                    "indexedDB-unlimited",
+                    "offline-app",
+                    "pin-app"
+                    ]
+            }
+        },
         "installs_allowed_from": ["*"],
         "locales": {
             "es": {
@@ -22,18 +34,7 @@
                     "url": "http://vios-up.blogspot.com"
                 }
             },
-            "it": {
-                "description": "Il vostro nuovo fantastico Open Web App",
-                "developer": {
-                    "url": "http://vios-up.blogspot.com"
-                }
-            }
         },
         "default_locale": "en",
-        "permissions": {
-            
-        },
-	"fullscreen": "true"
-    }
-
-
+    	"fullscreen": "true"
+}
