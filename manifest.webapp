@@ -16,10 +16,10 @@
         "permissions": {
             "storage": {
                 "description": "Requerido para almacenar los items del todo list",
-                app: ALLOW_ACTION,
-                privileged: ALLOW_ACTION,
-                certified: ALLOW_ACTION,
-                substitute: [
+                "app": "ALLOW_ACTION",
+                "privileged": "ALLOW_ACTION",
+                "certified": "ALLOW_ACTION",
+                "substitute": [
                     "indexedDB-unlimited",
                     "offline-app",
                     "pin-app"
@@ -33,7 +33,7 @@
                 "developer": {
                     "url": "http://vios-up.blogspot.com"
                 }
-            },
+            }
         },
         "default_locale": "en",
     	"fullscreen": "true"

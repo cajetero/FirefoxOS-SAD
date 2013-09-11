@@ -1,55 +1,55 @@
 
-      var html5rocks = {};
-      html5rocks.webdb = {};
-      html5rocks.webdb.db = null;
+      var TodoList = {};
+      TodoList.webdb = {};
+      TodoList.webdb.db = null;
       
-      html5rocks.webdb.open = function() {
+      TodoList.webdb.open = function() {
         var dbSize = 5 * 1024 * 1024; // 5MB
-        html5rocks.webdb.db = openDatabase("Todo", "1.0", "Todo manager", dbSize);
+        TodoList.webdb.db = openDatabase("Todo", "1.0", "Todo manager", dbSize);
       }
       
-      html5rocks.webdb.createTable = function() {
-        var db = html5rocks.webdb.db;
+      TodoList.webdb.createTable = function() {
+        var db = TodoList.webdb.db;
         db.transaction(function(tx) {
           tx.executeSql("CREATE TABLE IF NOT EXISTS todo(ID INTEGER PRIMARY KEY ASC, todo TEXT, added_on DATETIME)", []);
         });
       }
       
-      html5rocks.webdb.addTodo = function(todoText) {
-        var db = html5rocks.webdb.db;
+      TodoList.webdb.addTodo = function(todoText) {
+        var db = TodoList.webdb.db;
         db.transaction(function(tx){
           var addedOn = new Date();
           tx.executeSql("INSERT INTO todo(todo, added_on) VALUES (?,?)",
               [todoText, addedOn],
-              html5rocks.webdb.onSuccess,
-              html5rocks.webdb.onError);
+              TodoList.webdb.onSuccess,
+              TodoList.webdb.onError);
          });
       }
       
-      html5rocks.webdb.onError = function(tx, e) {
+      TodoList.webdb.onError = function(tx, e) {
         alert("There has been an error: " + e.message);
       }
       
-      html5rocks.webdb.onSuccess = function(tx, r) {
+      TodoList.webdb.onSuccess = function(tx, r) {
         // re-render the data.
-        html5rocks.webdb.getAllTodoItems(loadTodoItems);
+        TodoList.webdb.getAllTodoItems(loadTodoItems);
       }
       
       
-      html5rocks.webdb.getAllTodoItems = function(renderFunc) {
-        var db = html5rocks.webdb.db;
+      TodoList.webdb.getAllTodoItems = function(renderFunc) {
+        var db = TodoList.webdb.db;
         db.transaction(function(tx) {
           tx.executeSql("SELECT * FROM todo", [], renderFunc,
-              html5rocks.webdb.onError);
+              TodoList.webdb.onError);
         });
       }
       
-      html5rocks.webdb.deleteTodo = function(id) {
-        var db = html5rocks.webdb.db;
+      TodoList.webdb.deleteTodo = function(id) {
+        var db = TodoList.webdb.db;
         db.transaction(function(tx){
           tx.executeSql("DELETE FROM todo WHERE ID=?", [id],
-              html5rocks.webdb.onSuccess,
-              html5rocks.webdb.onError);
+              TodoList.webdb.onSuccess,
+              TodoList.webdb.onError);
           });
       }
       
@@ -64,17 +64,17 @@
       }
       
       function renderTodo(row) {
-        return "<li>" + row.todo  + " [<a href='javascript:void(0);'  onclick='html5rocks.webdb.deleteTodo(" + row.ID +");'>Borrar</a>]</li>";
+        return "<li>" + row.todo  + " [<a href='javascript:void(0);'  onclick='TodoList.webdb.deleteTodo(" + row.ID +");'>Borrar</a>]</li>";
       }
       
       function init() {
-        html5rocks.webdb.open();
-        html5rocks.webdb.createTable();
-        html5rocks.webdb.getAllTodoItems(loadTodoItems);
+        TodoList.webdb.open();
+        TodoList.webdb.createTable();
+        TodoList.webdb.getAllTodoItems(loadTodoItems);
       }
       
       function addTodo() {
         var todo = document.getElementById("todo");
-        html5rocks.webdb.addTodo(todo.value);
+        TodoList.webdb.addTodo(todo.value);
         todo.value = "";
       }
