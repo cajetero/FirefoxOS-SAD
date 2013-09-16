@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-   <title>TodoList</title>
-   <link rel="stylesheet" href="css/style.css">   
-   <link rel="stylesheet" href="css/foundation.css">  
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
 
-  <script src="js/vendor/custom.modernizr.js"></script> 
-  <script src="js/script.js"></script>  
-  </head>
-  <body style="background-color: #16a085"class="cuerpo" onload="init();">
-    <ul class="list" id="todoItems">
-    </ul>
-    <form type="post" onsubmit="addTodo(); return false;">
-        <input class="panel small expand" type="text" id="todo" name="todo" placeholder="Cosas Por Hacer"/>
-        <input class="small-3 large-3 button success expand" type="submit" value="Agregar"/>
-    </form>
-    
-    <h4 class="Pie" align="center"> <img class="Pie" src="img/check.png">My To-do List</img></h4>
-    <section role="region">
-    <a href="more.html">Mas?</a>
-  </section>
-  
-  </body>
-  <footer>
-    
-  </footer>
-</html>​
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+   <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+   <script type="text/javascript" src="js/main.js"></script>
+   <title>FxOS Super App Demo</title>
+</head>
+<body>
+
+   <header>
+     <button id="btnMain"></button>
+     <ul id="install-add">
+        <li><button id="btnInstall">Install</button></li>
+        <li><button id="btnAdd"></button></li>
+     </ul>
+     <h1>Super App Demo</h1>
+   </header>
+
+   <div class="body">
+      <div class="textEntry">
+       <!--  <textarea id="textContents" placeholder="Type it!"></textarea>-->
+      </div>
+   </div>
+   <h1>Main</h1>
+
+   <!--
+   <div id="glasspane">
+      <div id="title">Glass Pane Title</div>
+      <div id="msg">Message in the glass pane (for notifications, etc)</div>
+   </div>
+   -->
+
+   <footer>
+      <ul>
+        <li><button onClick=" window.location.href='todo.html' ">ToDo-List</button></li>
+        <li><button onClick=" window.location.href='bat.html' ">Battery Stat</button></li>
+        <li><button onClick=" window.location.href='alarm.html' ">Alarm</button></li>
+      </ul>
+   </footer>
+
+</body>
+</html>

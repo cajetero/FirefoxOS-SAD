@@ -5,7 +5,7 @@
         "description": "Simple Todo List",
         "launch_path": "/index.html",
         "icons": {
-            "16": "/img/icons/appicon-16.png",
+            "16": "/img/icons/appicon-16.jpg",
             "48": "/img/icons/appicon-48.png",
             "128": "/img/icons/appicon-128.png"
         },

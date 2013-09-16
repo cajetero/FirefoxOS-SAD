@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   <title>TodoList</title>
+   <link rel="stylesheet" href="css/todo-style.css">   
+   <link rel="stylesheet" href="css/foundation.css">  
+
+  <script src="js/vendor/custom.modernizr.js"></script> 
+  <script src="js/todo.js"></script>  
+  </head>
+  <body style="background-color: #16a085"class="cuerpo" onload="init();">
+    <ul class="list" id="todoItems">
+    </ul>
+    <form type="post" onsubmit="addTodo(); return false;">
+        <input class="panel small expand" type="text" id="todo" name="todo" placeholder="Cosas Por Hacer"/>
+        <input class="small-3 large-3 button success expand" type="submit" value="Agregar"/>
+    </form>
+    
+    <h4 class="Pie" align="center"> <img class="Pie" src="img/check.png">My To-do List</img></h4>
+    <section role="region">
+    <a href="more.html">Mas?</a>
+  </section>
+  
+  </body>
+  <footer>
+    
+  </footer>
+</html>​
