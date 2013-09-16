@@ -5,15 +5,17 @@
 
     <meta name="viewport" content="width=device-width">
 
-    <title>FxOS Super App Demo | ToDo-List</title>
+    
 
-    <!--<link rel="stylesheet" href="css/todo-style.css">   -->
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/todo-style.css">   
+    <!--<link rel="stylesheet" href="css/foundation.css">-->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>  
 
     <script src="js/vendor/custom.modernizr.js"></script> 
-    <script src="js/todo.js"></script>  
+    <script src="js/todo.js"></script>
+    <title>FxOS Super App Demo | ToDo-List</title>  
   </head>
+  <body onload="init();">
 
   <header>
      <button id="btnMain"></button>
@@ -22,18 +24,21 @@
         <li><button id="btnAdd"></button></li>
      </ul>
      <h1>ToDo-List</h1>
-   </header>
+  </header>
 
-  <body class="body" onload="init();">
+  <div class="body">
+
     <ul class="list" id="todoItems"> </ul>
 
     <form type="post" onsubmit="addTodo(); return false;">
         <input class="panel small expand" type="text" id="todo" name="todo" placeholder="Cosas Por Hacer"/>
-        <input class="small-3 large-3 button success expand" type="submit" value="Agregar"/>
+        <button class="expand" type="submit"><h2>Agregar</h2></button>
     </form>
     
-    <h4 class="Pie" align="center"> <img class="Pie" src="img/check.png">My To-do List</img></h4>
-  
+    <h4 class="Pie" align="center"> <img class="Pie" src="img/todo/check.png">My To-do List</img></h4>
+
+  </div>
+
   </body>
 
   <footer>

@@ -99,6 +99,7 @@ header li:active {
 }
 
 .body{
+  background-color: #2aa3c8;
   top: 6rem;
   left:1rem;
   right:1rem;

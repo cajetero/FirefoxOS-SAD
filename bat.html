@@ -2,36 +2,43 @@
 <html> 
 	<head> 
 		<meta charset="utf-8">
-		<title>FxOS Super App Demo | Battery</title>
 		<meta name="viewport" content="width=device-widt"/>
-		<link rel="stylesheet" href="css/foundation.css">
+
+		<!--<link rel="stylesheet" href="css/foundation.css">-->
 		<link rel="stylesheet" href="css/bat-style.css">  
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 	 	<script src="js/jquery-1.9.1.js"></script> 
 	 	<script src="js/bat.js"></script> 
 	 	<script src="js/vendor/custom.modernizr.js"></script> 
+	 	<title>FxOS Super App Demo | Battery</title>
 
 	</head>
-	<header>
-     <button id="btnMain"></button>
-     <ul id="install-add">
-        <li><button id="btnInstall">Install</button></li>
-        <li><button id="btnAdd"></button></li>
-     </ul>
-     <h1>Battery Level</h1>
-   </header>
 
-	<body class="body"> 
-		<p class="result" align="center">Porcentaje De Bateria Restante <span id="battery-pct"></span></p> 
-		<button class="expand" id="get-battery">Obtener</button> 
+	<body> 
+
+		<header>
+     		<button id="btnMain"></button>
+     			<ul id="install-add">
+        			<li><button id="btnInstall">Install</button></li>
+        			<li><button id="btnAdd"></button></li>
+     			</ul>
+     		<h1>Battery Level</h1>
+   		</header>
+
+   		<div  class="body">
+			<p class="result" align="center">Porcentaje De Bateria Restante <span id="battery-pct"></span></p> 
+			<button class="expand" id="get-battery"><h2>Obtener</h2></button> 
+		</div>
+
 	</body> 
-<footer>
+
+	<footer>
       <ul>
         <li><button onClick=" window.location.href='todo.html' ">ToDo-List</button></li>
         <li><button onClick=" window.location.href='index.html' ">Inicio</button></li>
         <li><button onClick=" window.location.href='alarm.html' ">Alarm</button></li>
       </ul>
-</footer>
+	</footer>
 
 </html>
