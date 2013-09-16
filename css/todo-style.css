@@ -25,3 +25,14 @@
      
 }
 
+.txtbox {
+    background-color: #2aa3c8;
+    /*height:60px;*/
+    color:white;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 0;
+    text-align: center;
+    width: 500px;
+}
+
