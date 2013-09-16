@@ -1,36 +1,47 @@
 <!DOCTYPE html> 
 <html>
 <head>
+	<meta charset="utf-8">
+	<title>FxOS Super App Demo | Alarm</title>
 	<meta name="viewport" content="width=device-widt"/>
 
 	<link rel="stylesheet" type="text/css" href="css/alarm-style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 	<script src="js/alarm.js"></script>
 </head>
 <body>
+	<header>
+     <button id="btnMain"></button>
+     <ul id="install-add">
+        <li><button id="btnInstall">Install</button></li>
+        <li><button id="btnAdd"></button></li>
+     </ul>
+     <h1>Alarma</h1>
+   </header>
 
-<form action="" method="">
+	<form action="" method="" class="body">
 
-<div id="jsalarmclock">
-<div>
-	<div class="leftcolumn">Tiempo Actual:</div> 
-	<span id="jsalarm_ct" style="letter-spacing: 2px"></span>
-</div>
+		<div id="jsalarmclock">
+			<div>
+				<div class="leftcolumn">Tiempo Actual:</div> 
+				<span id="jsalarm_ct" style="letter-spacing: 2px"></span>
+			</div>
 
-<div>
-	<div class="leftcolumn">Poner Alarma:</div> 
-	<span><select></select> Horas</span> 
-	<span><select></select> Minutos</span> 
-	<span><select></select> Segundos</span>
-</div>
+			<div>
+				<div class="leftcolumn">Poner Alarma:</div> 
+				<span><select></select> Horas</span> 
+				<span><select></select> Minutos</span> 
+				<span><select></select> Segundos</span>
+			</div>
 
-<div>
-	<div class="leftcolumn">Agregar Accion Alarma</div>
-	<input type="text" id="musicloc" size="55" value="http://www.youtube.com/watch?v=v1zY_tV5kaQ" /> 
-	<span style="font: normal 11px Tahoma">*Localizacion de la pagina a lanzar</span></div>
-	<input type="submit" value="Fijar Alarma!" id="submitbutton" /> 
-	<input type="reset" value="Deshacer!" id="resetbutton" />
-</div>
+			<div>
+				<div class="leftcolumn">Agregar Accion Alarma</div>
+				<input type="text" id="musicloc" size="55" value="http://www.youtube.com/watch?v=v1zY_tV5kaQ" /> 
+				<span style="font: normal 11px Tahoma">*Localizacion de la pagina a lanzar</span></div>
+				<input type="submit" value="Fijar Alarma!" id="submitbutton" /> 
+				<input type="reset" value="Deshacer!" id="resetbutton" />
+			</div>
 
 </form>
 
@@ -42,5 +53,13 @@ jsalarm.init()
 </script>
 
 </body>
+
+<footer>
+      <ul>
+        <li><button onClick=" window.location.href='todo.html' ">ToDo-List</button></li>
+        <li><button onClick=" window.location.href='bat.html' ">Battery Stat</button></li>
+        <li><button onClick=" window.location.href='index.html' ">Inicio</button></li>
+      </ul>
+</footer>
 
 </html>
